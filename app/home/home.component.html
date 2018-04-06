@@ -1,0 +1,18 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Home"></Label>
+</ActionBar>
+
+<StackLayout class="page">
+    <Button text="Show layout" (tap)="show()"></Button>
+    <Gradient direction="to bottom"
+              [colors]="colors"
+              [visibility]="visible">
+        <Label text="Gradient Layout" padding="20"></Label>
+    </Gradient>
+
+    <StackLayout
+            backgroundColor="red"
+            [visibility]="visible">
+        <Label text="Stack Layout" padding="20"></Label>
+    </StackLayout>
+</StackLayout>
